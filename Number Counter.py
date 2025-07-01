@@ -1,5 +1,5 @@
 def number_counter():
-    print("🔢 Number Counter")
+    print("Number Counter")
 
     try:
         start = int(input("Enter the starting number: "))
@@ -7,7 +7,7 @@ def number_counter():
         step = int(input("Enter the step value (e.g., 1): "))
 
         if step == 0:
-            print("⚠️ Step value cannot be 0.")
+            print("Step value cannot be 0.")
             return
 
         print("\nCounting:")
@@ -18,10 +18,10 @@ def number_counter():
             for i in range(start, end - 1, -step):
                 print(i, end=' ', flush=True)
 
-        print("\n✅ Done!")
+        print("\n Done!")
 
     except ValueError:
-        print("⚠️ Please enter valid integers.")
+        print(" Please enter valid integers.")
 
 if __name__ == "__main__":
     number_counter()
